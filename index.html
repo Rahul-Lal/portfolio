@@ -4,41 +4,47 @@
         <title>
             Rahul Lal | Software Developer
         </title>
-        <link rel="stylesheet" href="..\cs\style.css" >
-        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Play" />
-         <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet" />
-         <script src="C:\Users\Rahul La\Documents\GitHub\rahul-lal.github.io\js\script.js"></script>
-         
+        <link rel="stylesheet" href="..\rahul-lal.github.io\cs\style.css" >
+        <link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Exo+2" rel="stylesheet">
+        <script src="..\rahul-lal.github.io\js\script.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
     </head>
 
     <body onload="plusSlides(0)">
         <!--Header-->
         <header id="header" class="header">
-            <div align="center">
-                <a href="..\html\Index.html">
-                    <img id="logo" src="..\images\smallLogo.png" title="Logo" />
-                </a>
-
                 <nav>
+                    <!--
+                    <a href="..\rahul-lal.github.io\index.html">
+                            <br><img id="logo" src="..\rahul-lal.github.io\images\Title (Downloadable).png" title="Logo" />
+                    </a>
+                    -->
+                <div align="center"  >
+                    <a style="vertical-align: middle;" href="..\rahul-lal.github.io\index.html"><button id="mainLogo">Rahul Lal</button></a>
                     <a href="#About"><button>About</button></a>
                     <a href="#Resume"><button>Resume</button></a>
                     <a href="#Projects"><button>Project</button></a>
+                    <a href="#Blog"><button>Blog</button></a>
                     <a href="#Contact"><button>Contact</button></a>
+                </div>
                 </nav>
-            </div>
         </header>
 
         <!--Main Body-->
-        <section align="center" id="openingImage" class="openingImage" style="background-image: url(source-code-583537_SMALL.png);">
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <section align="center" id="openingImage" class="openingImage" style="background-image: url(source-code-583537_SMALL.jpg);">
+            <br><br><br><br><br><br><br><br>
                 <h2>Rahul Lal</h2>
                 <h3>Aspiring software developer from Auckland</h3>
                 <a href="#About"><button id="aboutButton" class="aboutButton">About Me</button></a>
         </section>
-        
-        
+
         <section id="About" align="center">
                     <div id="aboutdiv" align="center">
+                        <br><br>
+                        <br><br>
                         <br>
                         <h1>About Myself</h1>
                         <h4>
@@ -56,16 +62,16 @@
                             On early April, I started studying the <a href="https://static1.squarespace.com/static/5637e700e4b0c91b095e8627/t/56afd3c6b09f95166bbc125b/1454363591703/AMES+Diploma+in+Distributed+Software+Development.pdf" target="_blank">Diploma in Distributed Software Development</a> at <a href="http://www.ames.ac.nz/" target="_blank" >AMES IT</a>.
                             <br><br><br>
                             
-                            <img id="aboutImage" class="aboutImage" src="..\images\Merit Scholar.jpg" title="Rahul Lal | About Me"/>
+                            <img id="aboutImage" class="aboutImage" src="..\rahul-lal.github.io\images\Merit Scholar.jpg" title="Rahul Lal | About Me"/>
                         </p>
                     </div>
             </section>
             
-        
-        
-        <section class="Resume" align="center">
+        <section id="Resume" align="center">
                      <!--Header-->
                 <div id="cvDiv" align="center">
+                        <br><br>
+                        <br><br>
                         <br>
                         <h1>Resume</h1>
                             <h3>Skills</h3>  
@@ -186,13 +192,15 @@
             
         <section id="Projects" align="center">
                 <div id="projectBody" align="center" class="slideshow-container">
+                        <br><br>
+                        <br><br>
                         <br>
-                                   <h1>Projects</h1>
+                            <h1>Projects</h1>
                                    <!--Slideshow-->
                                    <!--Link Reference: http://www.w3schools.com/howto/howto_js_slideshow.asp -->
                                    
                                    <div class="fadingSlide">
-                                       <img src="..\images\Karate Club - Pakuranga Homepage.png" class="projectImage">
+                                       <img src="..\rahul-lal.github.io\images\Karate Club - Pakuranga Homepage.png" class="projectImage">
                                        <h5>Pakuranga Karate Club Website</h5>
                                        <p>
                                            As part of a school project, I did for my year 12 Computing and Information Technology course. The site is made for a fictionaous martial arts club to help increase the number of members joining. This is done using HTML/CSS, Microsoft Sharepoint Designer, and Adobe Photoshop.
@@ -202,7 +210,7 @@
                                    </div>
            
                                    <div class="fadingSlide">
-                                       <img src="..\images\Java Calculator.png" class="projectImage">
+                                       <img src="..\rahul-lal.github.io\images\Java Calculator.png" class="projectImage">
                                        <h5>Java Calculator</h5>
                                        <p>
                                            As the project of one of the programming concepts at Computer Power Plus. This calculator is made to perform basic numeric operation such as adding and multiplying of two values. Also it has special trigometic functions that visable if selected. This is done by using Java programming language and Netbeans IDE 6.1 to construct the application.
@@ -211,7 +219,7 @@
                                    </div>
            
                                    <div class="fadingSlide">
-                                       <img src="..\images\Nandoso - Live Chat.png" class="projectImage">
+                                       <img src="..\rahul-lal.github.io\images\Nandoso - Live Chat.png" class="projectImage">
                                        <h5>Nandoso Application</h5>
                                        <p>
                                            During the second phase of the Microsoft Student Accelerator. Students were tasked to create a web application for the Mt Eden's Nandoso restaurant (A fictitious version of Nandos). The main features include real-time live chat (using SignalR), and feedback page using Facebook plugin for comments. 
@@ -226,11 +234,25 @@
                        </div>
             </section>
         
+            <section id="Blog" align="center">
+                    <div id="mainBody" align="center">
+                            <br>
+                            <br><br>
+                            <br><br>
+                            
+                            <h1>Blog</h1>
+                                
+                        </div>
+                </section>
+        
         <section id="Contact" align="center">
                 <div id="mainBody" align="center">
                         <br>
-                            <image id="headerImage" class="headerImage" src="" title="About" />
-                            <h1>Contact</h1>
+                        <br><br>
+                        <br><br>
+                        
+                        <h1>Contact</h1>
+                            
                     </div>
             </section>
     </body>

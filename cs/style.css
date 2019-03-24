@@ -1,6 +1,11 @@
+html
+{
+    scroll-behavior: smooth;
+}
+
 body
 {
-    background-color: #222222;
+    background-color: #000000;
     color: rgb(0, 133, 196);
     width: auto;
     height: auto;
@@ -8,45 +13,76 @@ body
 
 section
 {
-    background-color: #333333;
+    background-color: #222222;
     height: 100%;
 }
 
 button
 {
     width: 125px;
-    height: 50px;
+    vertical-align: middle;
+    height: 75px;
     font-size: 15px;
     font-family: 'Play', serif;
     text-transform: uppercase; 
     align-items: center;
     background-color: #000000;
     border-color: #000000;
-    color: #00A8FF;
+    color: rgb(37, 118, 224);
     border-radius: 10%;
+}
+
+a
+{
+    text-decoration: none;
+    color: #C2E6F8;
+    font-weight: bold;
+}
+
+.headerbuttons
+{
+    width: 250px;
+    height: 100%;
+    vertical-align: middle;
+    font-size: 15px;
+    font-family: 'Play', serif;
+    text-transform: uppercase; 
+    align-items: center;
+    background-color: #000000;
+    border-color: #000000;
+    color: rgb(37, 118, 224);
+    border-radius: 10%; 
+}
+
+.headerbuttons:hover
+{
+    color: #C2E6F9;
+    transition-duration: 1.25s;
 }
 
 button:hover
 {
-    width: 125px;
-    height: 50px;
     color: #C2E6F9;
     transition-duration: 1.25s;
 }
 
 .aboutButton
 {
+    background-color: #000000;
+    opacity: 0.75;
     border-color: #C2E6F9;
     border-width: 1.25px;
     width: 500px;
+    height: 50px;
     vertical-align: 66%;
+    transition-duration: 1.25s;
 }
 
 .aboutButton:hover
 {
     border-width: 1.25px;
     width: 250px;
-    opacity: 0.5;
+    opacity: 0.33;
     vertical-align: 66%;
     border-radius: 5%;
 }
@@ -54,6 +90,11 @@ button:hover
 button:active
 {
     outline-width: 0px;
+}
+
+nav
+{
+    align-items: right;
 }
 
 p
@@ -82,7 +123,7 @@ h2
     font-size: 50px;
     text-align: center;
     font-weight: bold;
-    color: #C2E6F9;
+    color: rgb(37, 118, 224);
     text-transform: uppercase;
     text-shadow: 0px 1.25px gray;
 }
@@ -104,6 +145,7 @@ h4
     color: #85C1E9;
     text-transform: uppercase;
 }
+
 
 h5
 {
@@ -142,7 +184,7 @@ iframe
 
 .Resume
 {
-    height: 5000px;
+    height: 2333px;
 }
 
 #projectSection
@@ -160,9 +202,10 @@ iframe
 {
     position: fixed;
     width: 100%;
+    height: 12.5%;
     background-color: #000000;
     visibility: visible;
-    
+    vertical-align: middle;
 }
 
 #headerImage
@@ -201,11 +244,13 @@ iframe
     height: 950px;
 }
 
-a
+#mainLogo
 {
-    text-decoration: none;
-    color: #C2E6F8;
+    font-family: 'Exo 2', serif;
+    text-align: center;
+    font-size: 48px;
     font-weight: bold;
+    width: 300px;
 }
 
 ul
@@ -298,4 +343,11 @@ a:active, .prev:active, .next:active
 a:visited, .prev:visited, .next:visited
 {
     outline-color: transparent;
+}
+
+#logo
+{
+    width: 316.5px;
+    height: 100%;
+    vertical-align: middle;
 }
