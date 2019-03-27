@@ -1,652 +1,544 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>
-            Rahul Lal | Software Developer
-        </title>
-        <link rel="stylesheet" href="..\cs\style.css" >
-        <link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css?family=Exo+2" rel="stylesheet">
-        <script src="..\js\script.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<style>
-html
-{
-    scroll-behavior: smooth;
-}
 
-body
-{
-    background-color: #000000;
-    color: rgb(0, 133, 196);
-    width: auto;
-    height: auto;
-}
+<head>
+    <title>
+        Rahul Lal | Software Developer
+    </title>
+    <link rel="stylesheet" href="..\cs\style.css">
+    <link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Exo+2" rel="stylesheet">
+    <script src="..\js\script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
 
-section
-{
-    background-color: #222222;
-    height: 100%;
-}
+        nav
+        {
+            display: inline-block;
+        }
 
-button
-{
-    width: 125px;
-    vertical-align: middle;
-    height: 75px;
-    font-size: 15px;
-    font-family: 'Play', serif;
-    text-transform: uppercase; 
-    align-items: center;
-    background-color: #000000;
-    border-color: #000000;
-    color: rgb(37, 118, 224);
-    border-radius: 10%;
-}
+        body {
+            background-color: #000000;
+            color: rgb(0, 133, 196);
+            width: auto;
+            height: auto;
+        }
 
-a
-{
-    text-decoration: none;
-    color: #C2E6F8;
-    font-weight: bold;
-}
+        section {
+            background-color: #222222;
+            height: 100%;
+        }
 
-.headerbuttons
-{
-    width: 250px;
-    height: 100%;
-    vertical-align: middle;
-    font-size: 15px;
-    font-family: 'Play', serif;
-    text-transform: uppercase; 
-    align-items: center;
-    background-color: #000000;
-    border-color: #000000;
-    color: rgb(37, 118, 224);
-    border-radius: 10%; 
-}
+        button {
+            width: 125px;
+            vertical-align: middle;
+            height: 75px;
+            font-size: 15px;
+            font-family: 'Play', serif;
+            text-transform: uppercase;
+            align-items: center;
+            background-color: #000000;
+            border-color: #000000;
+            color: rgb(37, 118, 224);
+            border-radius: 10%;
+        }
 
-.headerbuttons:hover
-{
-    color: #C2E6F9;
-    transition-duration: 1.25s;
-}
+        a {
+            text-decoration: none;
+            color: #4979ED;
+        }
 
-button:hover
-{
-    color: #C2E6F9;
-    transition-duration: 1.25s;
-}
+        
 
-.aboutButton
-{
-    background-color: #000000;
-    opacity: 0.75;
-    border-color: #C2E6F9;
-    border-width: 1.25px;
-    width: 500px;
-    height: 50px;
-    vertical-align: 66%;
-    transition-duration: 1.25s;
-}
+        a:hover{
+            text-decoration: underline;
+            color: rgb(37, 118, 224);
+            font-weight: bold;
+        }
 
-.aboutButton:hover
-{
-    border-width: 1.25px;
-    width: 250px;
-    opacity: 0.33;
-    vertical-align: 66%;
-    border-radius: 5%;
-}
+        .headerbuttons {
+            width: 250px;
+            height: 100%;
+            vertical-align: middle;
+            font-size: 15px;
+            font-family: 'Play', serif;
+            text-transform: uppercase;
+            align-items: center;
+            background-color: #000000;
+            border-color: #000000;
+            color: rgb(37, 118, 224);
+            border-radius: 10%;
+        }
 
-button:active
-{
-    outline-width: 0px;
-}
+        .headerbuttons:hover {
+            color: #C2E6F9;
+            transition-duration: 1.25s;
+        }
 
-nav
-{
-    align-items: right;
-}
+        button:hover, a:hover{
+            color: #C2E6F9;
+            transition-duration: 1.25s;
+        }
 
-p
-{
-    text-align: center;
-    font-size: 16.66px;
-    color: lightgray;
-    font-family: 'PT Sans Narrow', serif;
-}
+        .aboutButton {
+            background-color: #000000;
+            opacity: 0.75;
+            border-color: #C2E6F9;
+            border-width: 1.25px;
+            width: 500px;
+            height: 50px;
+            vertical-align: 66%;
+            transition-duration: 1.25s;
+        }
 
-h1
-{
-    font-family: 'Play', serif;
-    text-align: center;
-    font-weight: bold;
-    color: #00A8FF;
-    opacity: 0.66;
-    text-transform: uppercase;
-    text-shadow: 0px 1.25px gray;
-    position: static;
-}
+        .aboutButton:hover {
+            border-width: 1.25px;
+            width: 250px;
+            opacity: 0.33;
+            vertical-align: 66%;
+            border-radius: 5%;
+        }
 
-h2
-{
-    font-family: 'Play', serif;
-    font-size: 50px;
-    text-align: center;
-    font-weight: bold;
-    color: rgb(37, 118, 224);
-    text-transform: uppercase;
-    text-shadow: 0px 1.25px gray;
-}
+        button:active {
+            outline-width: 0px;
+        }
 
-h3
-{
-    font-family: 'Play', serif;
-    font-size: 25px;
-    text-align: center;
-    color: lightgray;
-    text-transform: uppercase;
-}
+        nav {
+            align-items: right;
+        }
 
-h4
-{
-    font-family: 'Play', serif;
-    font-size: 17.5px;
-    text-align: center;
-    color: #85C1E9;
-    text-transform: uppercase;
-}
+        p
+        {
+            text-align: center;
+            font-size: 16.66px;
+            color: lightgray;
+            font-family: 'PT Sans Narrow', serif;
+        }
+
+        h1 {
+            font-family: 'Play', serif;
+            text-align: center;
+            font-weight: bold;
+            color: rgb(0, 133, 196);
+            text-transform: uppercase;
+        }
+
+        h2 {
+            font-family: 'Play', serif;
+            font-size: 50px;
+            text-align: center;
+            font-weight: bold;
+            color: rgb(37, 118, 224);
+            text-transform: uppercase;
+            text-shadow: 0px 1.25px gray;
+        }
+
+        h3 {
+            font-family: 'Play', serif;
+            font-size: 25px;
+            text-align: center;
+            color: lightgray;
+            text-transform: uppercase;
+        }
+
+        h4 {
+            font-family: 'Play', serif;
+            font-size: 17.5px;
+            text-align: center;
+            color: #85C1E9;
+            text-transform: uppercase;
+        }
 
 
-h5
-{
-    font-family: 'Play', serif;
-    font-size: 16.66px;
-    text-align: center;
-    color:#C2E6F9;
-    text-transform: uppercase;
-}
+        h5 {
+            font-family: 'Play', serif;
+            font-size: 16.66px;
+            text-align: center;
+            color: #C2E6F9;
+            text-transform: uppercase;
+        }
 
-h6
-{
-    font-family: 'Play', serif;
-    font-size: 15px;
-    text-align: center;
-    color: lightgray;
-    text-transform: uppercase;
-}
+        h6 {
+            font-family: 'Play', serif;
+            font-size: 15px;
+            text-align: center;
+            color: lightgray;
+            text-transform: uppercase;
+        }
 
-iframe
-{
-    width: 100%;
-    height: 933px;
-    border-color: transparent;
-}
+        iframe {
+            width: 100%;
+            height: 933px;
+            border-color: transparent;
+        }
 
-#aboutdiv
-{
-    background-color: #111111;
-}
+        #aboutdiv {
+            background-color: #111111;
+        }
 
-#projectBody
-{
-    background-color: #111111;
-}
+        #projectBody {
+            background-color: #111111;
+        }
 
-.Resume
-{
-    height: 2333px;
-}
+        .Resume {
+            height: 2333px;
+        }
 
-#projectSection
-{
-    height: 500px;
-}
+        #projectSection {
+            height: 500px;
+        }
 
-.aboutImage
-{
-    width: 50%;
-    height: 12.5%;
-}
+        .aboutImage {
+            width: 50%;
+            height: 12.5%;
+        }
 
-.header
-{
-    position: fixed;
-    width: 100%;
-    height: 12.5%;
-    background-color: #000000;
-    visibility: visible;
-    vertical-align: middle;
-}
+        .header {
+            position: fixed;
+            width: 100%;
+            height: 12.5%;
+            background-color: #000000;
+            visibility: visible;
+            vertical-align: middle;
+        }
 
-#headerImage
-{
-    width: 100%;
-    height: 30%;
-    position: block-inline;
-}
+        #headerImage {
+            width: 100%;
+            height: 30%;
+            position: block-inline;
+        }
 
-#titleImage
-{
-    width: 100%;
-    height: 30%;
-    position: block-inline;
-}
+        #titleImage {
+            width: 100%;
+            height: 30%;
+            position: block-inline;
+        }
 
-.openingImage
-{
-    background-image: url('source-code-583537_SMALL.jpg');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
-    width: 100%;
-    height: 950px;
-}
+        .openingImage {
+            background-image: url('source-code-583537_SMALL.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            background-size: cover;
+            width: 100%;
+            height: 950px;
+        }
 
-#openingImage
-{
-    background-image: url('source-code-583537_SMALL.jpg');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
-    width: 100%;
-    height: 950px;
-}
+        #openingImage {
+            background-image: url('source-code-583537_SMALL.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            background-size: cover;
+            width: 100%;
+            height: 950px;
+        }
 
-#mainLogo
-{
-    font-family: 'Exo 2', serif;
-    text-align: center;
-    font-size: 48px;
-    font-weight: bold;
-    width: 300px;
-}
+        #mainLogo {
+            font-family: 'Exo 2', serif;
+            text-align: center;
+            font-size: 48px;
+            font-weight: bold;
+            width: 300px;
+        }
 
-ul
-{
-    list-style-type: none;
-}
+        ul {
+            list-style-type: none;
+        }
 
-li
-{
-    font-family: 'PT Sans Narrow', serif;
-    color: #ffffff;
-}
+        li {
+            font-family: 'PT Sans Narrow', serif;
+            color: #ffffff;
+        }
 
-@media only screen and (min-width: 480px) and (max-width: 720px)
-{
-    .Resume
-    {
-        height: 2366px;
-    }
-    #projectSection
-    {
-        height: 750px;
-    }
-    #aboutSection
-    {
-        height: 1225px;
-    }
-    .aboutImage
-    {
-        width: 100%;
-        height: 12.5%;
-    }
-}
+        @media only screen and (min-width: 480px) and (max-width: 720px) {
+            .Resume {
+                height: 2366px;
+            }
 
- .projectButton
- {
-     font-size: 24px;
-     border-radius: 25px;
-     width: 50px;
- }
+            #projectSection {
+                height: 750px;
+            }
 
- .projectButton:hover
- {
-     font-size: 24px;
-     border-radius: 25px;
-     width: 50px;
-     background: #222222;
- }
- 
- .projectButton:active
- {
-     border: 0px, none, transparent;
-     outline:  0px, none, transparent;
- }
- 
- .projectButton::visited
- {
-     border: 0px, none, transparent;
-     outline:  0px, none, transparent;
- }
+            #aboutSection {
+                height: 1225px;
+            }
 
- .projectImage
- {
-     width: 666px;
-     height: 420px;
-     position: initial;
-     margin: auto;
-     
- }
+            .aboutImage {
+                width: 100%;
+                height: 12.5%;
+            }
+        }
 
-.prev, .next
-{
-    border-radius: 66%;
-    font-size: 25px;
-    background-color: #171717;
-    border-color: transparent;
-    outline-width: 0px;
-}
+        .projectButton {
+            font-size: 24px;
+            border-radius: 25px;
+            width: 50px;
+        }
 
-.prev:hover, .next:hover
-{
-    outline-width: 0px;
-}
+        .projectButton:hover {
+            font-size: 24px;
+            border-radius: 25px;
+            width: 50px;
+            background: #222222;
+        }
 
-a:active, .prev:active, .next:active
-{
-    outline-color: transparent;
-}
+        .projectButton:active {
+            border: 0px, none, transparent;
+            outline: 0px, none, transparent;
+        }
 
-a:visited, .prev:visited, .next:visited
-{
-    outline-color: transparent;
-}
+        .projectButton::visited {
+            border: 0px, none, transparent;
+            outline: 0px, none, transparent;
+        }
 
-#logo
-{
-    width: 316.5px;
-    height: 100%;
-    vertical-align: middle;
-}
-</style>
+        .projectImage {
+            width: 666px;
+            height: 420px;
+            position: initial;
+            margin: auto;
 
-<script>
-    var slideIndex = 1;
-showSlides(slideIndex);
+        }
 
-function plusSlides(n)
-{
-  showSlides(slideIndex += n);
-}
+        .prev,
+        .next {
+            border-radius: 66%;
+            font-size: 25px;
+            background-color: #171717;
+            border-color: transparent;
+            outline-width: 0px;
+        }
 
-function currentSlide(n)
-{
-  showSlides(slideIndex = n);
-}
+        .prev:hover,
+        .next:hover {
+            outline-width: 0px;
+        }
 
-function showSlides(n)
-{
-    var i = 0; 
+        a:active,
+        .prev:active,
+        .next:active {
+            outline-color: transparent;
+        }
 
-  var slides = document.getElementsByClassName("fadingSlide");
+        a:visited,
+        .prev:visited,
+        .next:visited {
+            outline-color: transparent;
+        }
 
-  if (n > slides.length)
-  {
-      slideIndex = 1;
-  }
-  else if (n < 1)
-  {
-      slideIndex = slides.length;
-  }
-  
-  for (; i < slides.length; i++)
-  {
-      slides[i].style.display = "none"; 
-  }
+        #logo {
+            width: 316.5px;
+            height: 100%;
+            vertical-align: middle;
+        }
+    </style>
 
-  slides[slideIndex-1].style.display = "block";
-}
-</script>
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
 
-    </head>
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
 
-    <body onload="plusSlides(0)">
-        <!--Header-->
-        <header id="header" class="header">
-                <nav>
-                    <!--
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i = 0;
+
+            var slides = document.getElementsByClassName("fadingSlide");
+
+            if (n > slides.length) {
+                slideIndex = 1;
+            }
+            else if (n < 1) {
+                slideIndex = slides.length;
+            }
+
+            for (; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+
+            slides[slideIndex - 1].style.display = "block";
+        }
+    </script>
+
+</head>
+
+<body onload="plusSlides(0)">
+    <!--Header-->
+    <header id="header" class="header">
+        <div align="center">
+        <nav>
+            <!--
                     <a href="..\rahul-lal.github.io\index.html">
                             <br><img id="logo" src="..\rahul-lal.github.io\images\Title (Downloadable).png" title="Logo" />
                     </a>
                     -->
-                <div align="center"  >
-                    <a style="vertical-align: middle;" href="https://rahul21lal.github.io/portfolio"><button id="mainLogo">Rahul Lal</button></a>
-                    <a href="#About"><button>About</button></a>
-                    <a href="#Resume"><button>Resume</button></a>
-                    <a href="#Projects"><button>Project</button></a>
-                    <a href="#Blog"><button>Blog</button></a>
-                    <a href="#Contact"><button>Contact</button></a>
-                </div>
-                </nav>
-        </header>
+                <a style="vertical-align: middle;" href="#openingImage">
+                    <button id="mainLogo">
+                        Rahul Lal
+                    </button>
+                </a>
+                
+                <a href="#About">
+                    <button>
+                        About
+                    </button>
+                </a>
+                <a href="#Projects">
+                    <button>
+                        Project
+                    </button>
+                </a>
+                <a href="#Blog">
+                    <button>
+                        Blog
+                    </button>
+                </a>
+                <a href="#Contact"><button>Contact</button></a>
+        </nav>
+    </div>
+    </header>
 
-        <!--Main Body-->
-        <section align="center" id="openingImage" class="openingImage" style="background-image: url(source-code-583537_SMALL.jpg);">
-            <br><br><br><br><br><br><br><br>
-                <h2>Rahul Lal</h2>
-                <h3>Aspiring software developer from Auckland</h3>
-                <a href="#About"><button id="aboutButton" class="aboutButton">About Me</button></a>
-        </section>
+    <!--Main Body-->
+    <section align="center" id="openingImage" class="openingImage"
+        style="background-image: url(source-code-583537_SMALL.jpg);">
+        <br><br><br><br><br><br><br><br>
+        <h2>Rahul Lal</h2>
+        <h3>Aspiring software developer from Auckland</h3>
+        <a href="#About"><button id="aboutButton" class="aboutButton">About Me</button></a>
+    </section>
 
-        <section id="About" align="center">
-                    <div id="aboutdiv" align="center">
-                        <br><br>
-                        <br><br>
-                        <br>
-                        <h1>About Myself</h1>
-                        <h4>
-                             My name is Rahul Lal. I'm pursuing a career as a software developer
-                        </h4>
-                        <p>
-                            My career path began in early 2011, the year I started <a href="http://www.nzqa.govt.nz/qualifications-standards/qualifications/ncea/" >NCEA</a> Level 1 at <a href="https://www.pakuranga.school.nz/" target="_blank">Pakuranga College</a>. I was placed in a generic computing course to complete my school timetable. I was amazed by the content that people would think they could do in their sleep. This content consists of touch-typing, understandig the Microsoft Office Suite, and basic HTML and CSS. I continued to take the classes for my last two years of school. That got me to chose to have a career in Information Technology.
-                            <br><br>
-                            A few months after graduating from college, I started studying the <a href="http://www.computerpowerplus.ac.nz/" target="_blank">Diploma in Software Development</a> at <a href="http://www.computerpowerplus.ac.nz/Diploma-in-Software-Development-Level5.html" target="_blank" >Computer Power Plus</a>. I chose Computer Power Plus as oppose to university, as they focus on skill than academics, self-pace & directed learning as oppose to lectures & labs, and to build on my current skillset at that time. 
-                            <br><br>
-                            During my time as a Computer Power Plus student, I learned various programming languages from SQL, Java and C#. Other areas such as database development, SDLC, and project management. I also learned things outside of my course, such as dressing to impress, finding direction from expierence (in general), and other tricks that could help impress an employer. I was also out of comfort zone, surrounded with students who are older than me and have expierence.
-                            <br><br>
-                            By late July, I had completed my diploma. I didn't decided not to find work immediately, not before I gain some work expierence. As a ex-school graduate who completed a IT diploma, finding work will be a drag. So gaining prior expierence would expose me to the real-world enviroment, expand my skills, connect with other in industry. On my last attempt, I didn't have enough skills to be exposed to real-world expierence. So I chose to continue study.
-                            <br><br>
-                            On early April, I started studying the <a href="https://static1.squarespace.com/static/5637e700e4b0c91b095e8627/t/56afd3c6b09f95166bbc125b/1454363591703/AMES+Diploma+in+Distributed+Software+Development.pdf" target="_blank">Diploma in Distributed Software Development</a> at <a href="http://www.ames.ac.nz/" target="_blank" >AMES IT</a>.
-                            <br><br><br>
-                            
-                            <img id="aboutImage" class="aboutImage" src="..\rahul-lal.github.io\images\Merit Scholar.jpg" title="Rahul Lal | About Me"/>
-                        </p>
-                    </div>
-            </section>
-            
-        <section id="Resume" align="center">
-                     <!--Header-->
-                <div id="cvDiv" align="center">
-                        <br><br>
-                        <br><br>
-                        <br>
-                        <h1>Resume</h1>
-                            <h3>Skills</h3>  
-                            <h4>Practical knowledge of programming languages</h4>
-                            <p>
-                                During my secondary studies ,  I have created a website for the Pakuranga Karate Club (dummy club) .  I used <a href="https://www.google.co.nz/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=what%20is%20html" target="_blank">Hyper-Text Markup Language (HTML) </a> & <a href="https://www.google.co.nz/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=what+is+css" target="_blank">Cascade Style Sheet (CSS)</a> as the languages, I used Sharepoint Designer as the IDE
-                                <br><br>
-                                Whilst studying at Computer Power Plus I have created a scientific calculator for the Programming Concepts module. <a href="https://www.google.co.nz/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=what+is+java+programming" target="_blank">Java</a> was the language used for this module
-                                As part of the <a href="http://msa.ms/">Microsoft Student Accelerator</a>, I was tasked to create an app. My app was a calculator, based on a project I did at Computer Power Plus. This was made using <a href="https://www.google.co.nz/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=what+is+c%23+used+for" target="_blank">C#</a> and developed it on the 2015​ version of <a href="https://www.visualstudio.com/" >Visual Studio</a>
-                            </p>
-    
-                            <h4>Skills for database development</h4>
-                            <p>
-                            I have created a database system using Microsoft Access as part of my studies at Computer Power Plus 
-                            Programming knowledge of <a href="https://www.google.co.nz/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=what+is+SQL" target=blank>Structured Query Language (SQL)</a>
-                            <br><br>
-                            My first industry project at AMES IT is a relational database management system (RDBMS)  for McDanny, a fictitious fast food restaurant. I’d create the database using Transact-Structured Query Language (TSQL),  a programming language use to manage the data inside the DBMS, this is also an extension of Structured Query Language (SQL) from Microsoft. The integrated development environment (The software of the data creation) used was SQL Server Management Studio 2014, also used Visual Studio Data Tools to create multiple SSIS Packages.
-                            </p> 
-                            
-                            <h4>Communication and teamwork</h4>
-                            <p>
-                            Have the abih4ty to communicate well with others. I have attended  communication workshops to get a better understanding of communication and how to effectively transfer that into deah4ng with people<br>
-                            <br>
-                            At Computer Power Plus I engaged in the Group Development Project where we had to create a training support system for a dummy corporation in the home ware industry
-                            </p>
-                            <br><br>
-    
-                            <h3>Education</h3>  
-    
-                            
-                                <h4>AMES IT</h4>
-                                <h5>2016</h5>
-                                <p>
-                                    Started studying at AMES in early April. Currently studying the Diploma in Distributed Software Development course, I have learned the following of:
-                                    <ul>
-                                        <h6>
-                                            Relational Database Administration and Development with SQL Server:
-                                        </h6>
-                                                <li>
-                                                    Querying database with T-SQL language
-                                                </li>
-                                                <li>
-                                                    Administrating SQL Databases
-                                                </li>
-                                                <li>
-                                                    Administrating SQL Databases
-                                                </li>
-                                        <h6>
-                                            C# Programming Fundamentals and Desktop Application Development:
-                                        </h6>
-                                                <li>
-                                                    Programming in C#
-                                                </li>
-                                                <li>
-                                                    Essentials of Developing Windows Store Apps using C#
-                                                </li>
-                                                <li>
-                                                    Advanced Windows Store App Development using C#
-                                                </li>
-                                        <h6>
-                                            Web Application Development:
-                                        </h6>
-                                                <li>
-                                                    Programming in HTML5 with JavaScript and CSS3
-                                                </li>
-                                                <li>
-                                                    
-                                                </li>
-                                                <li>
-                                                    
-                                                </li>
-                                    </ul>
-                                    <br><br>
-                                <p>
-                            
-                            <h4>Summer Of Tech</h4>
-                            <h5>2016</h5>
-                            
-                            <p>
-                                Along with my main studies at AMES IT, I currently doing the current intake of a non-profit internship programme, which connects students with NZ's tech employers for paid summer jobs.
-                            </p>
-                            <br><br>
-    
-                            <h4>Microsoft Student Accelerator</h4>
-                            <h5>2015</h5>
-                            
-                            <p>
-                                I'm participating in this programme for tertiary students getting work-ready. This is done by training them in software development and place them into voluntary work in order to gain work experience.
-                                I have learned the following:
-                            </p>
-    
-                            <ul>
-                                <li>Programming in C#</li>
-                                <li>Design user interfaces</li>
-                                <li>To develop Windows universal applications</li>
-                                <li>To develop web applications</li>
-                                <li>Using cloud platforms (Azure)</li>
-                            </ul>
-                            <br><br>
-                            
-                            <h4>Computer Power Plus</h4>
-                            <h5>2014 - 2015</h5>
-    
-                            <p>
-                                Started studying at Computer Power Plus few months after graduating from school. From the Diploma in Software Development course, I have learned the following of
-                            </p>
-    
-                            <ul>
-                                <li>Programming languages: HTML, CSS, SQL, C#, and Java</li>
-                                <li>Extended previous experience of using Microsoft Office suite</li>
-                                <li>Knowledge of software/system development life cycle</li>
-                                <li>Knowledge and experience of database development</li>
-                                <li>Knowledge and experience of developing a project in a team</li>
-                                <li>Improving the ability to communicate</li>
-                            </ul>
-                    </div>
-            </section>
-            
-        <section id="Projects" align="center">
-                <div id="projectBody" align="center" class="slideshow-container">
-                        <br><br>
-                        <br><br>
-                        <br>
-                            <h1>Projects</h1>
-                                   <!--Slideshow-->
-                                   <!--Link Reference: http://www.w3schools.com/howto/howto_js_slideshow.asp -->
-                                   
-                                   <div class="fadingSlide">
-                                       <img src="..\images\Karate Club - Pakuranga Homepage.png" class="projectImage">
-                                       <h5>Pakuranga Karate Club Website</h5>
-                                       <p>
-                                           As part of a school project, I did for my year 12 Computing and Information Technology course. The site is made for a fictionaous martial arts club to help increase the number of members joining. This is done using HTML/CSS, Microsoft Sharepoint Designer, and Adobe Photoshop.
-                                           <br><br>
-                                           I should point out that this site is not active.
-                                       </p>
-                                   </div>
-           
-                                   <div class="fadingSlide">
-                                       <img src="..\images\Java Calculator.png" class="projectImage">
-                                       <h5>Java Calculator</h5>
-                                       <p>
-                                           As the project of one of the programming concepts at Computer Power Plus. This calculator is made to perform basic numeric operation such as adding and multiplying of two values. Also it has special trigometic functions that visable if selected. This is done by using Java programming language and Netbeans IDE 6.1 to construct the application.
-                                           <br><br>
-                                       </p>
-                                   </div>
-           
-                                   <div class="fadingSlide">
-                                       <img src="..\images\Nandoso - Live Chat.png" class="projectImage">
-                                       <h5>Nandoso Application</h5>
-                                       <p>
-                                           During the second phase of the Microsoft Student Accelerator. Students were tasked to create a web application for the Mt Eden's Nandoso restaurant (A fictitious version of Nandos). The main features include real-time live chat (using SignalR), and feedback page using Facebook plugin for comments. 
-                                           <br><br>
-                                           Link: <a href="http://nandosomteden.azurewebsites.net/index.html">http://nandosomteden.azurewebsites.net/index.html</a>
-                                       </p>
-                                   </div>
-           
-                                   <a  onclick="plusSlides(-1)"><button class="prev">&#10094;</button></a>
-                                   <a onclick="plusSlides(1)"><button class="next">&#10095;</button></a>
-                                   <br><br>
-                       </div>
-            </section>
-        
-            <section id="Blog" align="center">
-                    <div id="mainBody" align="center">
-                            <br>
-                            <br><br>
-                            <br><br>
-                            
-                            <h1>Blog</h1>
-                                
-                        </div>
-                </section>
-        
-        <section id="Contact" align="center">
-                <div id="mainBody" align="center">
-                        <br>
-                        <br><br>
-                        <br><br>
-                        
-                        <h1>Contact</h1>
-                            
-                    </div>
-            </section>
-    </body>
+    <section id="About" align="center">
+        <div id="aboutdiv" align="center">
+            <br><br>
+            <br><br>
+            <br>
+            <h1>About Myself</h1>
+            <h4>
+                My name is Rahul Lal. I'm pursuing a career as a software developer
+            </h4>
+            <p>
+                My career path began in early 2011, the year I started <a
+                    href="http://www.nzqa.govt.nz/qualifications-standards/qualifications/ncea/">NCEA</a> Level 1 at <a
+                    href="https://www.pakuranga.school.nz/" target="_blank">Pakuranga College</a>. I was placed in a
+                generic computing course to complete my school timetable. I was amazed by the content that people would
+                think they could do in their sleep. This content consists of touch-typing, understandig the Microsoft
+                Office Suite, and basic HTML and CSS. I continued to take the classes for my last two years of school.
+                That got me to chose to have a career in Information Technology.
+                <br><br>
+                A few months after graduating from college, I started studying the <a
+                    href="http://www.computerpowerplus.ac.nz/" target="_blank">Diploma in Software Development</a> at <a
+                    href="http://www.computerpowerplus.ac.nz/Diploma-in-Software-Development-Level5.html"
+                    target="_blank">Computer Power Plus</a>. I chose Computer Power Plus as oppose to university, as
+                they focus on skill than academics, self-pace & directed learning as oppose to lectures & labs, and to
+                build on my current skillset at that time.
+                <br><br>
+                During my time as a Computer Power Plus student, I learned various programming languages from SQL, Java
+                and C#. Other areas such as database development, SDLC, and project management. I also learned things
+                outside of my course, such as dressing to impress, finding direction from expierence (in general), and
+                other tricks that could help impress an employer. I was also out of comfort zone, surrounded with
+                students who are older than me and have expierence.
+                <br><br>
+                By late July, I had completed my diploma. I didn't decided not to find work immediately, not before I
+                gain some work expierence. As a ex-school graduate who completed a IT diploma, finding work will be a
+                drag. So gaining prior expierence would expose me to the real-world enviroment, expand my skills,
+                connect with other in industry. On my last attempt, I didn't have enough skills to be exposed to
+                real-world expierence. So I chose to continue study.
+                <br><br>
+                On early April, I started studying the <a
+                    href="https://static1.squarespace.com/static/5637e700e4b0c91b095e8627/t/56afd3c6b09f95166bbc125b/1454363591703/AMES+Diploma+in+Distributed+Software+Development.pdf"
+                    target="_blank">Diploma in Distributed Software Development</a> at <a href="http://www.ames.ac.nz/"
+                    target="_blank">AMES IT</a>.
+                <br><br><br>
+
+                <img id="aboutImage" class="aboutImage" src="..\rahul-lal.github.io\images\Merit Scholar.jpg"
+                    title="Rahul Lal | About Me" />
+            </p>
+        </div>
+    </section>
+
+    <section id="Projects" align="center">
+        <div id="projectBody" align="center" class="slideshow-container">
+            <br><br>
+            <br><br>
+            <br>
+            <h1>Projects</h1>
+            <!--Slideshow-->
+            <!--Link Reference: http://www.w3schools.com/howto/howto_js_slideshow.asp -->
+
+            <div class="fadingSlide">
+                <img src="..\images\Karate Club - Pakuranga Homepage.png" class="projectImage">
+                <h5>Pakuranga Karate Club Website</h5>
+                <p>
+                    As part of a school project, I did for my year 12 Computing and Information Technology course. The
+                    site is made for a fictionaous martial arts club to help increase the number of members joining.
+                    This is done using HTML/CSS, Microsoft Sharepoint Designer, and Adobe Photoshop.
+                    <br><br>
+                    I should point out that this site is not active.
+                </p>
+            </div>
+
+            <div class="fadingSlide">
+                <img src="..\images\Java Calculator.png" class="projectImage">
+                <h5>Java Calculator</h5>
+                <p>
+                    As the project of one of the programming concepts at Computer Power Plus. This calculator is made to
+                    perform basic numeric operation such as adding and multiplying of two values. Also it has special
+                    trigometic functions that visable if selected. This is done by using Java programming language and
+                    Netbeans IDE 6.1 to construct the application.
+                    <br><br>
+                </p>
+            </div>
+
+            <div class="fadingSlide">
+                <img src="..\images\Nandoso - Live Chat.png" class="projectImage">
+                <h5>Nandoso Application</h5>
+                <p>
+                    During the second phase of the Microsoft Student Accelerator. Students were tasked to create a web
+                    application for the Mt Eden's Nandoso restaurant (A fictitious version of Nandos). The main features
+                    include real-time live chat (using SignalR), and feedback page using Facebook plugin for comments.
+                    <br><br>
+                    Link: <a
+                        href="http://nandosomteden.azurewebsites.net/index.html">http://nandosomteden.azurewebsites.net/index.html</a>
+                </p>
+            </div>
+
+            <a onclick="plusSlides(-1)"><button class="prev">&#10094;</button></a>
+            <a onclick="plusSlides(1)"><button class="next">&#10095;</button></a>
+            <br><br>
+        </div>
+    </section>
+
+    <section id="Blog" align="center">
+        <div id="mainBody" align="center">
+            <br>
+            <br><br>
+            <br><br>
+
+            <h1>Blog</h1>
+
+        </div>
+    </section>
+
+    <section id="Contact" align="center">
+        <div id="mainBody" align="center">
+            <br>
+            <br><br>
+            <br><br>
+
+            <h1>Contact</h1>
+
+        </div>
+    </section>
+</body>
+
 </html>
