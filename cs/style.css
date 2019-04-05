@@ -1,30 +1,37 @@
-html
-{
+html {
     scroll-behavior: smooth;
 }
 
-body
+nav
 {
+    display: inline-block;
+}
+
+body {
     background-color: #000000;
     color: rgb(0, 133, 196);
     width: auto;
     height: auto;
 }
 
-section
+.contactIcons
 {
+    height: 66px;
+    width: 66px;
+}
+
+section {
     background-color: #222222;
     height: 100%;
 }
 
-button
-{
+button {
     width: 125px;
     vertical-align: middle;
     height: 75px;
     font-size: 15px;
     font-family: 'Play', serif;
-    text-transform: uppercase; 
+    text-transform: uppercase;
     align-items: center;
     background-color: #000000;
     border-color: #000000;
@@ -32,42 +39,49 @@ button
     border-radius: 10%;
 }
 
-a
-{
+a {
     text-decoration: none;
-    color: #C2E6F8;
+    color: #4979ED;
+}
+
+.headerLink :hover
+{
+    color: #C2E6F9;
+    transition-duration: 1.25s;
+}
+
+a:hover{
+    text-decoration: underline;
+    color: rgb(37, 118, 224);
     font-weight: bold;
 }
 
-.headerbuttons
-{
+.headerbuttons {
     width: 250px;
     height: 100%;
     vertical-align: middle;
     font-size: 15px;
     font-family: 'Play', serif;
-    text-transform: uppercase; 
+    text-transform: uppercase;
     align-items: center;
     background-color: #000000;
     border-color: #000000;
     color: rgb(37, 118, 224);
-    border-radius: 10%; 
+    border-radius: 10%;
 }
 
-.headerbuttons:hover
+
+
+.embedly-card
 {
-    color: #C2E6F9;
-    transition-duration: 1.25s;
+    max-width: 600px;
+    padding: 0px;
+    position: relative;
+    min-width: 200px;
+    margin: 5px auto;
 }
 
-button:hover
-{
-    color: #C2E6F9;
-    transition-duration: 1.25s;
-}
-
-.aboutButton
-{
+.aboutButton {
     background-color: #000000;
     opacity: 0.75;
     border-color: #C2E6F9;
@@ -78,8 +92,7 @@ button:hover
     transition-duration: 1.25s;
 }
 
-.aboutButton:hover
-{
+.aboutButton:hover {
     border-width: 1.25px;
     width: 250px;
     opacity: 0.33;
@@ -87,14 +100,12 @@ button:hover
     border-radius: 5%;
 }
 
-button:active
-{
+button:active {
     outline-width: 0px;
 }
 
-nav
-{
-    align-items: right;
+nav {
+    align-items: center;
 }
 
 p
@@ -105,20 +116,15 @@ p
     font-family: 'PT Sans Narrow', serif;
 }
 
-h1
-{
+h1 {
     font-family: 'Play', serif;
     text-align: center;
     font-weight: bold;
-    color: #00A8FF;
-    opacity: 0.66;
+    color: rgb(0, 133, 196);
     text-transform: uppercase;
-    text-shadow: 0px 1.25px gray;
-    position: static;
 }
 
-h2
-{
+h2 {
     font-family: 'Play', serif;
     font-size: 50px;
     text-align: center;
@@ -128,8 +134,7 @@ h2
     text-shadow: 0px 1.25px gray;
 }
 
-h3
-{
+h3 {
     font-family: 'Play', serif;
     font-size: 25px;
     text-align: center;
@@ -137,8 +142,7 @@ h3
     text-transform: uppercase;
 }
 
-h4
-{
+h4 {
     font-family: 'Play', serif;
     font-size: 17.5px;
     text-align: center;
@@ -147,17 +151,15 @@ h4
 }
 
 
-h5
-{
+h5 {
     font-family: 'Play', serif;
     font-size: 16.66px;
     text-align: center;
-    color:#C2E6F9;
+    color: #C2E6F9;
     text-transform: uppercase;
 }
 
-h6
-{
+h6 {
     font-family: 'Play', serif;
     font-size: 15px;
     text-align: center;
@@ -165,41 +167,30 @@ h6
     text-transform: uppercase;
 }
 
-iframe
-{
+iframe {
     width: 100%;
     height: 933px;
     border-color: transparent;
 }
 
-#aboutdiv
-{
+#aboutdiv {
     background-color: #111111;
 }
 
-#projectBody
-{
+#projectBody {
     background-color: #111111;
 }
 
-.Resume
-{
-    height: 2333px;
-}
-
-#projectSection
-{
+#projectSection {
     height: 500px;
 }
 
-.aboutImage
-{
-    width: 50%;
-    height: 12.5%;
+.aboutImage {
+    width: 333px;
+    height: 366px;
 }
 
-.header
-{
+.header {
     position: fixed;
     width: 100%;
     height: 12.5%;
@@ -208,44 +199,39 @@ iframe
     vertical-align: middle;
 }
 
-#headerImage
-{
+#headerImage {
     width: 100%;
     height: 30%;
     position: block-inline;
 }
 
-#titleImage
-{
+#titleImage {
     width: 100%;
     height: 30%;
     position: block-inline;
 }
 
-.openingImage
-{
-    background-image: url('source-code-583537_SMALL.png');
+.openingImage {
+    background-image: url('source-code-583537_SMALL.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
     width: 100%;
-    height: 950px;
+    height: 625px;
 }
 
-#openingImage
-{
-    background-image: url('source-code-583537_SMALL.png');
+#openingImage {
+    background-image: url('source-code-583537_SMALL.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
     width: 100%;
-    height: 950px;
+    height: 625px;
 }
 
-#mainLogo
-{
+#mainLogo {
     font-family: 'Exo 2', serif;
     text-align: center;
     font-size: 48px;
@@ -253,76 +239,66 @@ iframe
     width: 300px;
 }
 
-ul
-{
+ul {
     list-style-type: none;
 }
 
-li
-{
+li {
     font-family: 'PT Sans Narrow', serif;
     color: #ffffff;
 }
 
-@media only screen and (min-width: 480px) and (max-width: 720px)
-{
-    .Resume
-    {
+@media only screen and (min-width: 480px) and (max-width: 720px) {
+    .Resume {
         height: 2366px;
     }
-    #projectSection
-    {
+
+    #projectSection {
         height: 750px;
     }
-    #aboutSection
-    {
+
+    #aboutSection {
         height: 1225px;
     }
-    .aboutImage
-    {
+
+    .aboutImage {
         width: 100%;
         height: 12.5%;
     }
 }
 
- .projectButton
- {
-     font-size: 24px;
-     border-radius: 25px;
-     width: 50px;
- }
+.projectButton {
+    font-size: 24px;
+    border-radius: 25px;
+    width: 50px;
+}
 
- .projectButton:hover
- {
-     font-size: 24px;
-     border-radius: 25px;
-     width: 50px;
-     background: #222222;
- }
- 
- .projectButton:active
- {
-     border: 0px, none, transparent;
-     outline:  0px, none, transparent;
- }
- 
- .projectButton::visited
- {
-     border: 0px, none, transparent;
-     outline:  0px, none, transparent;
- }
+.projectButton:hover {
+    font-size: 24px;
+    border-radius: 25px;
+    width: 50px;
+    background: #222222;
+}
 
- .projectImage
- {
-     width: 666px;
-     height: 420px;
-     position: initial;
-     margin: auto;
-     
- }
+.projectButton:active {
+    border: 0px, none, transparent;
+    outline: 0px, none, transparent;
+}
 
-.prev, .next
-{
+.projectButton::visited {
+    border: 0px, none, transparent;
+    outline: 0px, none, transparent;
+}
+
+.projectImage {
+    width: 466px;
+    height: 240px;
+    position: initial;
+    margin: auto;
+}
+
+.prev,
+.next {
     border-radius: 66%;
     font-size: 25px;
     background-color: #171717;
@@ -330,23 +306,24 @@ li
     outline-width: 0px;
 }
 
-.prev:hover, .next:hover
-{
+.prev:hover,
+.next:hover {
     outline-width: 0px;
 }
 
-a:active, .prev:active, .next:active
-{
+a:active,
+.prev:active,
+.next:active {
     outline-color: transparent;
 }
 
-a:visited, .prev:visited, .next:visited
-{
+a:visited,
+.prev:visited,
+.next:visited {
     outline-color: transparent;
 }
 
-#logo
-{
+#logo {
     width: 316.5px;
     height: 100%;
     vertical-align: middle;
