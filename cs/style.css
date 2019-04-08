@@ -2,11 +2,6 @@ html {
     scroll-behavior: smooth;
 }
 
-nav
-{
-    display: inline-block;
-}
-
 body {
     background-color: #000000;
     color: rgb(0, 133, 196);
@@ -18,6 +13,15 @@ body {
 {
     height: 66px;
     width: 66px;
+    opacity: 0.33;
+    filter: grayscale(87.5%);
+}
+
+a :hover, .contactIcons :hover
+{
+    opacity: 1.0;
+    transition-duration: 0.75s;
+    filter: grayscale(0%);
 }
 
 section {
@@ -43,6 +47,34 @@ a {
     text-decoration: none;
     color: #4979ED;
 }
+
+
+
+
+#header a
+{
+  float: left;
+  display: block;
+  padding: 75px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.header a
+{
+  float: left;
+  display: block;
+  padding: 75x;
+  text-align: center;
+  text-decoration: none;
+}
+
+
+.header
+{
+    overflow: visible;
+}
+
 
 .headerLink :hover
 {
@@ -70,16 +102,6 @@ a:hover{
     border-radius: 10%;
 }
 
-
-
-.embedly-card
-{
-    max-width: 600px;
-    padding: 0px;
-    position: relative;
-    min-width: 200px;
-    margin: 5px auto;
-}
 
 .aboutButton {
     background-color: #000000;
@@ -190,14 +212,34 @@ iframe {
     height: 366px;
 }
 
-.header {
+#header {
     position: fixed;
+    overflow: visible;
+    padding: 30px;
     width: 100%;
     height: 12.5%;
     background-color: #000000;
     visibility: visible;
     vertical-align: middle;
 }
+
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+/* Page content */
+.content {
+    padding: 16px;
+  }
+  
+  /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+  .sticky + .content {
+    padding-top: 60px;
+  }
 
 #headerImage {
     width: 100%;
@@ -237,6 +279,12 @@ iframe {
     font-size: 48px;
     font-weight: bold;
     width: 300px;
+}
+
+#mainLogo:hover
+{
+    color: #C2E6F9;
+    transition-duration: 1.25s
 }
 
 ul {
